@@ -15,9 +15,11 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
+    <script src="script.js"></script>
 </head>
 <body>
-    <header class="bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center h-screen">
+    <header class="h-screen overflow-hidden">
+        <div id="parallax-img-pub" class="absolute inset-0 bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center h-full z-0"></div>
         <div class="absolute top-0 left-0 inset-0 bg-black/60 z-1"></div>
         <nav class="relative z-5">
             <ul class="flex gap-4 justify-end pt-8 pr-4 poppins-regular">
@@ -33,7 +35,7 @@
             <img src="img/noun-chevron-down-344375-FFFFFF.png" class="h-10 w-10 mt-2" >
         </div>
     </header>
-    <main>
+    <main class="relative z-1">
         <section class="about bg-[var(--light-blue-bg)] pt-4 pb-8">
             <div class="bg-[var(--hummingbird-purple)] w-4/5 mx-auto rounded-md overflow-hidden">
                 <p class="text-white poppins-regular p-4 text-sm leading-relaxed">Located in the heart of South Galiano, the Hummingbird Pub is a beloved place to enjoy breakfast, lunch, dinner, or drinks all year round! The quintessential pub atmosphere and signature island charm are unmistakable the moment you arrive. We've got an outstanding menu, loads of comfortable seating, and we frequently host events, activities and live music. Come join us!</p>
@@ -52,15 +54,16 @@
             </div>
             
         </section>
-        <section class="pub-bus">
-            <div class="bus-parallax h-[80vh]">
-                <img src="img/pub_bus_1.jpeg" class="w-full h-[120%] object-cover object-[center_30%]"/>
+        <section class="pub-bus relative h-[80vh] overflow-hidden">
+            <div class="bus-parallax h-full">
+                <img id="parallax-img-bus" src="img/pub_bus_1.jpeg" class="w-full h-full object-cover"/>
                 <h2></h2>
             </div>
         </section>
-        <section class="location">
+        <section class="location relative">
             <h2>Where to find us...</h2>
             <!-- insert map element here -->
+             <h2>We are located right in the heart of downtown Galiano Island and we are just a 8 minute drive away from the ferry terminal. Enjoy the view on the way over!!</h2>
         </section>
     </main>
     <footer>
