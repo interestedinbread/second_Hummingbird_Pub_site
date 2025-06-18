@@ -1,4 +1,3 @@
-
 // parallax scroll logic for pub img
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY
@@ -10,6 +9,6 @@ window.addEventListener('scroll', () => {
 
     if(rect2.top < window.innerHeight && rect2.bottom > 0) {
         const visibleY = window.innerHeight - rect2.top;
-        image2.style.transform = `translateY(${visibleY * 0.3}px)`
+        image2.style.transform = `translateY(${-275 + visibleY * 0.3}px)`
     }
 })
