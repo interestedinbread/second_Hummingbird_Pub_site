@@ -250,11 +250,14 @@
   .h-\[80vh\] {
     height: 80vh;
   }
+  .h-\[120vh\] {
+    height: 120vh;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[400px\] {
     height: 400px;
-  }
-  .h-\[500px\] {
-    height: 500px;
   }
   .h-full {
     height: 100%;
@@ -267,9 +270,6 @@
   }
   .w-4\/5 {
     width: calc(4/5 * 100%);
-  }
-  .w-5\/6 {
-    width: calc(5/6 * 100%);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -314,9 +314,6 @@
   }
   .border-white {
     border-color: var(--color-white);
-  }
-  .bg-\[var\(--grey-bg\)\] {
-    background-color: var(--grey-bg);
   }
   .bg-\[var\(--hummingbird-purple\)\] {
     background-color: var(--hummingbird-purple);
@@ -378,18 +375,6 @@
   .font-\[cursive\] {
     font-family: cursive;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -401,9 +386,6 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-\[2\.5rem\] {
-    font-size: 2.5rem;
   }
   .text-\[2\.65rem\] {
     font-size: 2.65rem;
