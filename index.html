@@ -7,19 +7,12 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-...your-integrity-hash..."
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+English+SC&family=Merienda:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body class="">
     <header class="h-screen overflow-hidden">
-        <div id="parallax-img-pub" class="absolute inset-0 bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center h-full z-0"></div>
+        <div id="parallax-img-pub" class="absolute inset-0 bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center z-0 custom-height-105vh"></div>
         <div class="absolute top-0 left-0 inset-0 bg-black/60 h-[120vh] z-1"></div>
         <nav class="relative z-5">
             <ul class="flex gap-4 justify-end pt-8 pr-4 poppins-regular">
@@ -29,7 +22,7 @@
             </ul>
         </nav>
         <div class="flex flex-col items-center justify-center relative z-5 h-3/4 -ml-1">
-            <h1 class="relative im-fell-english-sc-regular text-[2.75rem] text-white z-5 text-center mt-16 leading-relaxed w-3/4">THE HUMMINGBIRD PUB</h1>
+            <h1 class="relative font-serif text-[2.75rem] text-white z-5 text-center mt-16 leading-relaxed w-3/4">THE HUMMINGBIRD PUB</h1>
             <button class="bg-[var(--hummingbird-purple)] text-white rounded-md p-1 m-8">View Menu</button>
             <p class="poppins-regular text-white">Or scroll down</p>
             <img src="img/noun-chevron-down-344375-FFFFFF.png" class="h-10 w-10 mt-2" >
@@ -76,7 +69,7 @@
                     <table class="schedule-table border border-white rounded-md">
                         <thead class="border border-white">
                             <tr>
-                                <th class="text-white poppins-regular text-sm leading-relaxed">Pub Departure</th>
+                                <th class="text-white poppins-regular text-sm leading-relaxed pl-[0.5rem]">Pub Departure</th>
                                 <th class="text-white poppins-regular text-sm leading-relaxed">Marina Pickup</th>
                                 <th class="text-white poppins-regular text-sm leading-relaxed">Campground Pickup</th>
                             </tr>
@@ -120,10 +113,10 @@
         <section class="location relative pb-8">
             <div id="parallax-img-pub-front" class="absolute inset-0 bg-[url('img/exterior_front_entrance.jpg')] bg-cover bg-center h-[80vh]"></div>
             <div class="absolute top-0 left-0 inset-0 bg-black/60 z-1 height-[180%]"></div>
-            <h2 class="relative font-[cursive] text-[2.65rem] text-center py-8 text-[var(--light-blue-bg)] z-5">Where to find us</h2>
+            <h2 class="relative merienda-regular text-[2.65rem] text-center py-8 text-[var(--light-blue-bg)] z-5">Where to find us</h2>
             <!-- insert map element here -->
             <div class="relative w-4/5 h-[400px] mx-auto z-5">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.2830314461244!2d-123.34835192353373!3d48.8909429713366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485f787c595ac3b%3A0x69dadd3dbbac2107!2sHummingbird%20Pub%20%26%20Family%20Restaurant!5e0!3m2!1sen!2sca!4v1750281290097!5m2!1sen!2sca" height="400" width="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="z-5 rounded-md"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.2830314461244!2d-123.34835192353373!3d48.8909429713366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485f787c595ac3b%3A0x69dadd3dbbac2107!2sHummingbird%20Pub%20%26%20Family%20Restaurant!5e0!3m2!1sen!2sca!4v1750281290097!5m2!1sen!2sca" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="z-5 rounded-md"></iframe>
             </div>
              <p class="relative text-white poppins-regular text-md leading-relaxed w-4/5 mx-auto mt-8 z-5">The Hummingbird Pub is located near the corner of Porlier Pass Rd. and Georgeson Bay Rd. just a 7 minute drive from Sturdies Bay ferry terminal!</p>
         </section>

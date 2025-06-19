@@ -40,4 +40,14 @@
     font-weight: 400;
     font-style: normal;
   }
+
+.merienda-regular {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
   
+.custom-height-105vh {
+    height: 105vh;
+}
