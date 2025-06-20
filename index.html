@@ -7,6 +7,13 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-...your-integrity-hash..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+English+SC&family=Merienda:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
@@ -111,7 +118,7 @@
         </section>
             
         <section class="location relative pb-8">
-            <div id="parallax-img-pub-front" class="absolute inset-0 bg-[url('img/exterior_front_entrance.jpg')] bg-cover bg-center h-[80vh]"></div>
+            <div id="parallax-img-pub-front" class="absolute inset-0 bg-[url('img/exterior_front_entrance.jpg')] bg-cover bg-center custom-height-105vh"></div>
             <div class="absolute top-0 left-0 inset-0 bg-black/60 z-1 height-[180%]"></div>
             <h2 class="relative merienda-regular text-[2.65rem] text-center py-8 text-[var(--light-blue-bg)] z-5">Where to find us</h2>
             <!-- insert map element here -->
@@ -122,23 +129,34 @@
         </section>
         <section class="relative bg-[var(--light-blue-bg)]">
             <div>
-                <img src="img/New_hummingbird_food_pics/breakfast_hash.jpg" class="w-full h-[300px] pt-4" />
-                <img src="img/New_hummingbird_food_pics/burger_2.jpg" class="w-full h-[300px]"/>
+                <img src="img/Edited_Hummingbird_food_pics/breakfast_hash.jpg" class="w-full pt-4" />
+                <img src="img/Edited_Hummingbird_food_pics/burger_2.JPG" class="w-full h-[300px]"/>
             </div>
             <div>
-                <img src="img/New_hummingbird_food_pics/chicken_tenders.jpg" class="w-full h-[300px]"/>
-                <img src="img/New_hummingbird_food_pics/eggs_benedict.jpg" class="w-full h-[300px]"/>
-                <img src="img/New_hummingbird_food_pics/Nachos.jpg" class="w-full h-[300px]"/>
+                <img src="img/Edited_Hummingbird_food_pics/chicken_tenders.jpg" class="w-full"/>
+                <img src="img/Edited_Hummingbird_food_pics/eggs_benedict.jpg" class="w-full"/>
+                <img src="img/Edited_Hummingbird_food_pics/Nachos.jpg" class="w-full"/>
             </div>
             <div>
-                <img src="img/New_hummingbird_food_pics/shrimp salad.jpg" class="w-full h-[300px]"/>
-                <img src="img/New_hummingbird_food_pics/wrap.jpg" class="w-full h-[300px]"/>
+                <img src="img/Edited_Hummingbird_food_pics/shrimp salad.jpg" class="w-full"/>
+                <img src="img/Edited_Hummingbird_food_pics/wrap.jpg" class="w-full"/>
             </div>
 
         </section>
     </main>
-    <footer class="h-200">
-
+    <footer class="bg-[var(--hummingbird-purple)]">
+        <div class="flex justify-between items-start w-full p-4">
+            <div class="">
+                <p class="text-white poppins-regular text-sm leading-relaxed">THE HUMMINGBIRD PUB</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">47 Sturdies Bay Rd</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">Galiano Island, BC, V0N 1P0</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">Phone: 250-539-5472</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="https://www.facebook.com/HummingbirdPub/" ><i class="fa-brands fa-square-facebook text-white text-4xl"></i></a>
+                <a href="https://www.instagram.com/hummingbirdpub/" ><i class="fa-brands fa-square-instagram text-white text-4xl"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
