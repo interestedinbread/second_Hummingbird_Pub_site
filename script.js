@@ -19,3 +19,13 @@ window.addEventListener('scroll', () => {
         image3.style.transform = `translateY(${-295 + visibleY * 0.3}px)`
     }
 })
+
+// navbar background on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('nav')
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled')
+    } else {
+        navbar.classList.remove('navbar-scrolled')
+    }
+})
