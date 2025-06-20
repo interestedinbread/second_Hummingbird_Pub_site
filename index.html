@@ -15,7 +15,6 @@
         referrerpolicy="no-referrer"
     />
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+English+SC&family=Merienda:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 <body class="">
     <header class="h-screen overflow-hidden">
@@ -23,12 +22,12 @@
         <div class="absolute top-0 left-0 inset-0 bg-black/60 h-[120vh] z-1"></div>
         <nav class="fixed z-50 w-full flex justify-between p-2 pl-4">
             <div class="h-12 w-12 rounded-full">
-                <img src="img/logo.jpg" alt="Hummingbird Pub Logo" class="h-12 w-12 rounded-full">
+                <img id="logo" src="img/logo.jpg" alt="Hummingbird Pub Logo" class="h-12 w-12 rounded-full">
             </div>
             <ul class="flex gap-4 justify-end items-center pr-4 poppins-regular">
-                <li class="text-white">About</li>
+                <li class="text-white"><a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200">About</a></li>
                 <li class="text-white">Menu</li>
-                <li class="text-white">Pub Bus</li>
+                <li class="text-white"><a href="#pub-bus" class="text-white hover:text-gray-300 transition-colors duration-200">Pub Bus</a></li>
             </ul>
         </nav>
         <div class="flex flex-col items-center justify-center relative z-5 h-3/4 -ml-1">
@@ -39,7 +38,7 @@
         </div>
     </header>
     <main class="relative z-1 bg-[var(--light-blue-bg)]">
-        <section class="about bg-[var(--light-blue-bg)] pt-4 pb-8">
+        <section id="about" class="about bg-[var(--light-blue-bg)] pt-4 pb-8">
             <div class="bg-[var(--hummingbird-purple)] w-4/5 mx-auto rounded-md overflow-hidden">
                 <p class="text-white poppins-regular p-4 text-sm leading-relaxed">Located in the heart of South Galiano, the Hummingbird Pub is a beloved place to enjoy breakfast, lunch, dinner, or drinks all year round! The quintessential pub atmosphere and signature island charm are unmistakable the moment you arrive. We've got an outstanding menu, loads of comfortable seating, and we frequently host events, activities and live music. Come join us!</p>
                 <div class="flex justify-center -mt-10 -mb-8 overflow-hidden">
@@ -63,7 +62,7 @@
                 <h2></h2>
             </div>
         </section>
-        <section class="relative pb-8 z-5 bg-[var(--light-blue-bg)]">
+        <section id="pub-bus" class="relative pb-8 z-5 bg-[var(--light-blue-bg)]">
             <div class="bg-[var(--hummingbird-purple)] mt-8 w-4/5 mx-auto rounded-md pt-4 pr-4 pl-4 pb-4 overflow-hidden">
                 <p class="text-white poppins-regular text-sm leading-relaxed">The Pub bus guides you to Montague, our Provincial Park, while entertaining you along the way. To ensure the safety of our riders, we restrict the number of passengers per ride to 25 people.</p>
                 <p class="text-white poppins-regular text-sm leading-relaxed mt-2">The Pub Bus runs over the May long weekend: May 16, 17, 18; and will then run Friday & Saturday from May 23 to June 26. From June 27 to September 21 the bus will run everyday.</p>
@@ -76,7 +75,7 @@
             <div class="bg-[var(--hummingbird-purple)] mt-8 w-4/5 mx-auto rounded-md p-4">
                 <p class="text-white poppins-extrabold text-lg leading-relaxed text-center">Bus Schedule</p>
                     <p class="text-white poppins-regular text-sm leading-relaxed text-center mb-4">* runs for august only *</p>
-                    <table class="schedule-table border border-white rounded-md">
+                    <table class="schedule-table border border-white rounded-md mx-auto">
                         <thead class="border border-white">
                             <tr>
                                 <th class="text-white poppins-regular text-sm leading-relaxed pl-[0.5rem]">Pub Departure</th>
@@ -161,5 +160,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

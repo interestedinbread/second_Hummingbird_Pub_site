@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --hummingbird-purple: #980156;
     --light-blue-bg: rgb(200, 245, 250);
