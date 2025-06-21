@@ -252,6 +252,9 @@
   .flex {
     display: flex;
   }
+  .aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
   .h-3\/4 {
     height: calc(3/4 * 100%);
   }
@@ -465,6 +468,16 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .md\:max-h-\[600px\] {
+    @media (width >= 48rem) {
+      max-height: 600px;
+    }
+  }
+  .md\:max-w-\[600px\] {
+    @media (width >= 48rem) {
+      max-width: 600px;
+    }
+  }
   .md\:text-6xl {
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
@@ -483,9 +496,19 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
   .lg\:h-\[90vh\] {
     @media (width >= 64rem) {
       height: 90vh;
+    }
+  }
+  .lg\:max-h-\[400px\] {
+    @media (width >= 64rem) {
+      max-height: 400px;
     }
   }
   .lg\:w-1\/2 {
@@ -501,6 +524,16 @@
   .lg\:w-40 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:max-w-\[400px\] {
+    @media (width >= 64rem) {
+      max-width: 400px;
+    }
+  }
+  .lg\:max-w-\[600px\] {
+    @media (width >= 64rem) {
+      max-width: 600px;
     }
   }
   .lg\:gap-8 {
@@ -591,9 +624,19 @@
       max-height: 65vh;
     }
   }
+  .xl\:max-h-\[500px\] {
+    @media (width >= 80rem) {
+      max-height: 500px;
+    }
+  }
   .xl\:w-1\/2 {
     @media (width >= 80rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .xl\:w-2\/3 {
+    @media (width >= 80rem) {
+      width: calc(2/3 * 100%);
     }
   }
   .xl\:w-4\/5 {
@@ -609,6 +652,11 @@
   .xl\:w-full {
     @media (width >= 80rem) {
       width: 100%;
+    }
+  }
+  .xl\:max-w-\[500px\] {
+    @media (width >= 80rem) {
+      max-width: 500px;
     }
   }
   .xl\:grid-cols-3 {
@@ -634,6 +682,12 @@
   .xl\:object-cover {
     @media (width >= 80rem) {
       object-fit: cover;
+    }
+  }
+  .xl\:text-6xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
   .\32 xl\:w-2\/3 {
