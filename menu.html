@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-...your-integrity-hash..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+English+SC&family=Merienda:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[var(--light-blue-bg)]">
+    <header class="h-screen overflow-hidden">
+        <div id="parallax-img-pub" class="absolute inset-0 bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center z-0 custom-height-105vh"></div>
+        <div class="absolute top-0 left-0 inset-0 bg-black/60 h-[120vh] z-1"></div>
+        <nav class="fixed z-50 w-full flex justify-between p-2 pl-4 lg:pl-12">
+            <div class="h-12 w-12 rounded-full">
+                <img id="logo" src="img/logo.jpg" alt="Hummingbird Pub Logo" class="h-12 w-12 rounded-full">
+            </div>
+            <ul class="flex gap-4 lg:gap-8 justify-end items-center pr-4 lg:pr-12 poppins-regular">
+                <li class="text-white"><a href="#about" class="text-white md:text-lg hover:text-gray-300 transition-colors duration-200">About</a></li>
+                <li class="text-white md:text-lg">Menu</li>
+                <li class="text-white md:text-lg"><a href="#pub-bus" class="text-white hover:text-gray-300 transition-colors duration-200">Pub Bus</a></li>
+            </ul>
+        </nav>
+        <div class="flex flex-col items-center justify-center relative z-5 h-3/4 -ml-1">
+            <h1 class="relative font-serif text-[2.75rem] text-white z-5 text-center mt-16 leading-relaxed w-3/4 sm:text-5xl md:text-6xl lg:text-8xl xl:w-1/2 lg:pt-60">THE HUMMINGBIRD PUB</h1>
+            <button class="bg-[var(--hummingbird-purple)] text-white rounded-md p-1 m-8 lg:text-lg">View Menu</button>
+            <p class="poppins-regular text-white lg:text-lg">Or scroll down</p>
+            <img src="img/noun-chevron-down-344375-FFFFFF.png" class="h-10 w-10 mt-2" >
+        </div>
+    </header>
+    <main class="relative z-1 bg-[var(--light-blue-bg)]">
+        
+    </main>
+    <footer class="bg-[var(--hummingbird-purple)]">
+        <div class="flex justify-between items-start w-full p-4">
+            <div class="">
+                <p class="text-white poppins-regular text-sm leading-relaxed">THE HUMMINGBIRD PUB</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">47 Sturdies Bay Rd</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">Galiano Island, BC, V0N 1P0</p>
+                <p class="text-white poppins-regular text-sm leading-relaxed">Phone: 250-539-5472</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="https://www.facebook.com/HummingbirdPub/" ><i class="fa-brands fa-square-facebook text-white text-4xl"></i></a>
+                <a href="https://www.instagram.com/hummingbirdpub/" ><i class="fa-brands fa-square-instagram text-white text-4xl"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
