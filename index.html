@@ -16,7 +16,7 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+English+SC&family=Merienda:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
 </head>
-<body class="">
+<body class="bg-[var(--light-blue-bg)]">
     <header class="h-screen overflow-hidden">
         <div id="parallax-img-pub" class="absolute inset-0 bg-[url('img/exterior_side_view.jpg')] bg-cover bg-center z-0 custom-height-105vh"></div>
         <div class="absolute top-0 left-0 inset-0 bg-black/60 h-[120vh] z-1"></div>
@@ -39,7 +39,7 @@
     </header>
     <main class="relative z-1 bg-[var(--light-blue-bg)]">
         <section id="about" class="about relative bg-[var(--light-blue-bg)] pt-4 pb-8 xl:max-h-[80vh]">
-            <h2 class="merienda-regular my-4 lg:my-8 text-center text-4xl text-[var(--hummingbird-purple)] lg:text-6xl ">About Us</h2>
+            <h2 class="merienda-regular mb-4 lg:my-8 text-center text-4xl text-[var(--hummingbird-purple)] lg:text-6xl ">About Us</h2>
             <div class="relative mx-auto lg:w-4/5 xl:grid xl:grid-cols-3 xl:grid-rows-2 xl:gap-8 xl:max-h-[65vh] 2xl:w-2/3">
                 <div class="bg-[var(--hummingbird-purple)] w-4/5 mx-auto rounded-md overflow-hidden xl:w-full xl:col-span-2">
                     <p class="text-white poppins-regular p-4 text-sm leading-relaxed md:text-base lg:text-lg">Located in the heart of South Galiano, the Hummingbird Pub is a beloved place to enjoy breakfast, lunch, dinner, or drinks all year round! The quintessential pub atmosphere and signature island charm are unmistakable the moment you arrive. We've got an outstanding menu, loads of comfortable seating, and we frequently host events, activities and live music. Come join us!</p>
@@ -73,8 +73,8 @@
                     <p class="text-white poppins-regular text-sm md:text-base lg:text-lg leading-relaxed mt-2">The Pub Bus runs over the May long weekend: May 16, 17, 18; and will then run Friday & Saturday from May 23 to June 26. From June 27 to September 21 the bus will run everyday.</p>
                     <p class="text-white poppins-regular text-sm md:text-base lg:text-lg leading-relaxed mt-2">Bus Hours will be 5-9pm till July 31, and then 4-9pm from August 1-31. Thank you for joining us this summer!</p>
                     <div class="flex justify-center -mt-8 -mb-8">
-                        <img src="img/fleuron_left.png" class="w-30 -mb-4"/>
-                        <img src="img/fleuron_left.png" class="w-30 -scale-x-100 -mb-4"/>
+                        <img src="img/fleuron_left.png" class="w-30 lg:w-50"/>
+                        <img src="img/fleuron_left.png" class="w-30 -scale-x-100 lg:w-50"/>
                     </div>
                 </div>
                 <div class="bg-[var(--hummingbird-purple)] mt-8 xl:mt-4 w-4/5 mx-auto rounded-md p-4">
@@ -143,19 +143,18 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-[var(--light-blue-bg)]">
-            <div class="lg:flex w-full">
-                <img src="img/Edited_Hummingbird_food_pics/breakfast_hash.jpg" class="w-full pt-4 lg:w-auto lg:h-full" />
-                <img src="img/Edited_Hummingbird_food_pics/burger_2.JPG" class="w-full lg:w-auto lg:h-full"/>
+        <section class="relative bg-[var(--light-blue-bg)] w-full">
+            <h2 class="merienda-regular text-center text-4xl text-[var(--hummingbird-purple)] lg:text-6xl pt-8 pb-4">Find these and more on our menu!</h2>
+            <div class="lg:grid lg:grid-cols-4 pt-4 lg:gap-4 overflow-hidden">
+                <img src="img/Edited_Hummingbird_food_pics/breakfast_hash.jpg" class="pt-4 lg:pt-0 lg:h-[103%]" />
+                <img src="img/Edited_Hummingbird_food_pics/eggs_benedict.jpg" class="lg:h-[103%] lg:object-cover"/>
+                <img src="img/Edited_Hummingbird_food_pics/shrimp salad.jpg" class="lg:h-[103%] lg:object-cover"/>
+                <img src="img/Edited_Hummingbird_food_pics/Nachos.jpg" class=""/>
             </div>
-            <div>
-                <img src="img/Edited_Hummingbird_food_pics/chicken_tenders.jpg" class="w-full"/>
-                <img src="img/Edited_Hummingbird_food_pics/eggs_benedict.jpg" class="w-full"/>
-                <img src="img/Edited_Hummingbird_food_pics/Nachos.jpg" class="w-full"/>
-            </div>
-            <div>
-                <img src="img/Edited_Hummingbird_food_pics/shrimp salad.jpg" class="w-full"/>
-                <img src="img/Edited_Hummingbird_food_pics/wrap.jpg" class="w-full"/>
+            <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-hidden lg:my-4">
+                <img src="img/Edited_Hummingbird_food_pics/chicken_tenders.jpg" class=""/>
+                <img src="img/Edited_Hummingbird_food_pics/burger_2.JPG" class="lg:h-[103%] lg:object-cover lg:object-left"/>
+                <img src="img/Edited_Hummingbird_food_pics/wrap.jpg" class="lg:h-[103%] lg:object-cover"/>
             </div>
 
         </section>
