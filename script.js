@@ -22,6 +22,11 @@ window.addEventListener('scroll', () => {
 
 // navbar background on scroll
 window.addEventListener('scroll', () => {
+    // Skip navbar scroll behavior on menu page
+    if (window.location.pathname.includes('menu.html')) {
+        return;
+    }
+    
     const navbar = document.querySelector('nav')
     if (window.scrollY > 50) {
         navbar.classList.add('navbar-scrolled')
@@ -67,6 +72,46 @@ if (logo) {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        })
+    })
+}
+
+// Mobile menu functionality
+const mobileMenuBtn = document.getElementById('mobile-menu-btn')
+const closeMenuBtn = document.getElementById('close-menu-btn')
+const mobileMenu = document.getElementById('mobile-menu')
+
+if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        // Toggle menu - if it's closed, open it; if it's open, close it
+        if (mobileMenu.classList.contains('translate-x-full')) {
+            mobileMenu.classList.remove('translate-x-full')
+            mobileMenu.classList.add('translate-x-0')
+            // Rotate menu icon
+            mobileMenuBtn.classList.add('rotate-180')
+        } else {
+            mobileMenu.classList.remove('translate-x-0')
+            mobileMenu.classList.add('translate-x-full')
+            // Rotate menu icon back
+            mobileMenuBtn.classList.remove('rotate-180')
+        }
+    })
+    
+    closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-0')
+        mobileMenu.classList.add('translate-x-full')
+        // Rotate menu icon back when closing with X button
+        mobileMenuBtn.classList.remove('rotate-180')
+    })
+    
+    // Close menu when clicking on a menu item
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a')
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-0')
+            mobileMenu.classList.add('translate-x-full')
+            // Rotate menu icon back when closing via menu item click
+            mobileMenuBtn.classList.remove('rotate-180')
         })
     })
 }

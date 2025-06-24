@@ -13,6 +13,7 @@ html {
     --light-blue-bg: rgb(200, 245, 250);
     --grey-bg: rgba(0, 0, 0, 0.819);
     --green-text: rgb(120, 246, 86);
+    --menu-bg: rgb(252, 243, 231);
 }
 
 /* Navbar scroll styles */
@@ -119,6 +120,16 @@ html {
 .custom-height-105vh {
     height: 105vh;
 }
-.custom-height-110vh {
-    height: 110vh;
+
+/* Mobile menu icon rotation animation */
+#mobile-menu-btn {
+    transition: transform 0.3s ease;
+}
+
+#mobile-menu-btn.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.custom-height-112vh {
+    height: 112vh;
 }
