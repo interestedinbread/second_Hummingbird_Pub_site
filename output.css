@@ -215,6 +215,15 @@
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
+  .top-30 {
+    top: calc(var(--spacing) * 30);
+  }
+  .top-40 {
+    top: calc(var(--spacing) * 40);
+  }
+  .top-50 {
+    top: calc(var(--spacing) * 50);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -367,6 +376,9 @@
   }
   .h-\[120vh\] {
     height: 120vh;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[600px\] {
     height: 600px;
