@@ -311,6 +311,9 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .-ml-1 {
     margin-left: calc(var(--spacing) * -1);
   }
@@ -612,6 +615,16 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .md\:mb-8 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
+    }
+  }
   .md\:max-h-\[600px\] {
     @media (width >= 48rem) {
       max-height: 600px;
@@ -625,6 +638,11 @@
   .md\:max-w-\[600px\] {
     @media (width >= 48rem) {
       max-width: 600px;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:text-6xl {
