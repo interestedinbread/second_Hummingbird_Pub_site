@@ -66,8 +66,8 @@
                 <img src="img/hummingbird_and_flower.png" class="hidden absolute top-50 left-8 lg:inline -scale-x-100 h-[400px] object-cover" />
             </div>
             <div class="relative mt-12 col-span-4" id="starters">
-                <img src="img/hummingbird_1.png" class="absolute h-[75px] lg:h-[125px] -top-4 left-8 lg:top-0 lg:left-1/4" />
-                <img src="img/hummingbird_1.png" class="absolute h-[75px] lg:h-[125px] -top-4 right-8 lg:top-0 lg:right-1/4 -scale-x-100" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8 lg:hidden" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] lg:h-[125px] -top-4 right-8 lg:top-0 lg:right-40 -scale-x-100" />
                 <h3 class="font-serif text-center text-3xl lg:text-5xl my-8">Starters</h3>
                 <div class="md:grid md:grid-cols-2 lg:grid-cols-2 lg:gap-2">
                     
@@ -162,308 +162,329 @@
         </div>
 
         <!-- SOUPS AND SALADS -->
-
-        <div class="relative mt-12" id="soups-and-salads">
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-4" />
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-4 -scale-x-100" />
-            <h3 class="font-serif text-center text-3xl mt-4 mb-8">Soups and Salads</h3>
-            <div class="md:grid md:grid-cols-2">
-
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">Daily Soup</p>
-                        <p class="poppins-regular-italic text-sm">Please ask your server about today's fresh pot.</p>
+        <div class="lg:grid lg:grid-cols-4 lg:mt-12">
+            <div class="relative mt-12 lg:col-span-3" id="soups-and-salads">
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] lg:h-[125px] -top-8 left-4 lg:left-30" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-8 right-4 -scale-x-100 lg:hidden" />
+                <h3 class="font-serif text-center text-3xl lg:text-5xl mt-4 mb-8">Soups and Salads</h3>
+                <div class="md:grid md:grid-cols-2">
+                    
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">Daily Soup</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Please ask your server about today's fresh pot.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">Cup: $7</p>
+                            <p class="text-right poppins-regular lg:text-base">Bowl: $11</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">Cup: $7</p>
-                        <p class="text-right poppins-regular">Bowl: $11</p>
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">House Salad</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Mixed greens topped with shredded beets, carrots, dried cranberries, goat cheese and sunflower seeds.</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Your choice of: House Oil & Vinegar, Ranch, Blue Cheese.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">Small: $12</p>
+                            <p class="text-right poppins-regular lg:text-base">Large: $17</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">Salish Chowder</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">A New England-style stable to warm you up featuring cod, scallops, and clams.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">Cup: $9</p>
+                            <p class="text-right poppins-regular lg:text-base">Bowl: $15</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">Caesar Salad</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Fresh romaine and asiago cheese tossed in Caesar dressing with homemade croutons.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">Small: $15</p>
+                            <p class="text-right poppins-regular lg:text-base">Large: $19</p>
+                            <p class="text-right poppins-regular lg:text-base">Chicken $6</p>
+                            <p class="text-right poppins-regular lg:text-base">Bacon: $3</p>
+                            <p class="text-right poppins-regular lg:text-base">Prawns: $6</p>
+                        </div>
                     </div>
                 </div>
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">House Salad</p>
-                        <p class="poppins-regular-italic text-sm">Mixed greens topped with shredded beets, carrots, dried cranberries, goat cheese and sunflower seeds.</p>
-                        <p class="poppins-regular-italic text-sm">Your choice of: House Oil & Vinegar, Ranch, Blue Cheese.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">Small: $12</p>
-                        <p class="text-right poppins-regular">Large: $17</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">Salish Chowder</p>
-                        <p class="poppins-regular-italic text-sm">A New England-style stable to warm you up featuring cod, scallops, and clams.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">Cup: $9</p>
-                        <p class="text-right poppins-regular">Bowl: $15</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">Caesar Salad</p>
-                        <p class="poppins-regular-italic text-sm">Fresh romaine and asiago cheese tossed in Caesar dressing with homemade croutons.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">Small: $15</p>
-                        <p class="text-right poppins-regular">Large: $19</p>
-                        <p class="text-right poppins-regular">Chicken $6</p>
-                        <p class="text-right poppins-regular">Bacon: $3</p>
-                        <p class="text-right poppins-regular">Prawns: $6</p>
-                    </div>
-                </div>
+            </div>
+            <div class="hidden relative lg:inline col-span-1">
+                <img src="img/two_hummngbirds_and_flower.png" class="hidden absolute top-80 left-8 lg:inline -scale-x-100 h-[300px] object-cover" />
             </div>
         </div>
 
         <!-- PUB GRUB -->
-
-        <div class="relative mt-12" id="pub-grub">
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8" />
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 -scale-x-100" />
-            <h3 class="font-serif text-center text-3xl mt-4 mb-8">Pub Grub</h3>
-            <div class="md:grid md:grid-cols-2">
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">Fish & Chips</p>
-                        <p class="poppins-regular-italic text-sm">Your choice of deep-fried Cod in our homemade beer-battered or Grilled, accompanied by fries or a green salad. Served with tartar and garnish coleslaw.</p>
+        <div class="lg:grid lg:grid-cols-4 lg:mt-12">
+            <div class="relative mt-12 lg:col-span-3" id="pub-grub">
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8 lg:hidden" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 -scale-x-100 lg:hidden" />
+                <h3 class="font-serif text-center text-3xl lg:text-5xl mt-4 mb-8">Pub Grub</h3>
+                <div class="md:grid md:grid-cols-2">
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">Fish & Chips</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Your choice of deep-fried Cod in our homemade beer-battered or Grilled, accompanied by fries or a green salad. Served with tartar and garnish coleslaw.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">1 Piece: $20</p>
+                            <p class="text-right poppins-regular lg:text-base">2 Piece: $24</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">1 Piece: $20</p>
-                        <p class="text-right poppins-regular">2 Piece: $24</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-2">
-                        <p class="poppins-extrabold">Kid's Favourites</p>
-                        <p class="poppins-regular-italic text-sm">• Personal Cheese Pizza</p>
-                        <p class="poppins-regular-italic text-sm">• Cheeseburger & Fries</p>
-                        <p class="poppins-regular-italic text-sm">• Grilled Cheese or Ham & Cheese</p>
-                        <p class="poppins-regular-italic text-sm">• 3 Chicken Strips with Fries</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$10</p>
+                    <div class="mt-6 grid grid-cols-3 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-2">
+                            <p class="poppins-extrabold lg:text-lg">Kid's Favourites</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">• Personal Cheese Pizza</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">• Cheeseburger & Fries</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">• Grilled Cheese or Ham & Cheese</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">• 3 Chicken Strips with Fries</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$10</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="hidden relative lg:inline col-span-1">
+                <img src="img/hummingbird_and_flower2.png" class="hidden absolute top-20 left-8 lg:inline h-[300px] object-cover -scale-x-100" />
+            </div> -->
         </div>
 
         <!-- PAN PIZZA -->
-
-        <div class="relative mt-12" id="pan-pizza">
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8" />
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 -scale-x-100" />
-            <h3 class="font-serif text-center text-3xl mt-4 mb-8">Pan Pizza</h3>
-            <p class="text-center poppins-regular-italic text-sm mb-8 w-5/6 mx-auto">House dough spread 16″ wide with tangy tomato sauce and your favourite toppings!</p>
-            <div class="md:grid md:grid-cols-2">
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Meat Lovers</p>
-                        <p class="poppins-regular-italic text-sm">Medium thickness bread crust with layers of pepperoni, bacon, ham and ground beef. Mozzarella aplenty.</p>
+        <div class="lg:grid lg:grid-cols-4 lg:mt-12">
+            <div class="relative lg:col-span-1">
+                <img src="img/single_hummingbird2.png" class="hidden absolute top-40 left-30 lg:inline h-[200px] object-cover" />
+            </div>
+            <div class="relative mt-12 lg:col-span-3" id="pan-pizza">
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8 lg:hidden" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 lg:hidden -scale-x-100" />
+                <h3 class="font-serif text-center text-3xl mt-4 mb-8 lg:text-5xl">Pan Pizza</h3>
+                <p class="text-center poppins-regular-italic text-sm mb-8 w-5/6 mx-auto lg:text-base">House dough spread 16″ wide with tangy tomato sauce and your favourite toppings!</p>
+                <div class="md:grid md:grid-cols-2">
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Meat Lovers</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Medium thickness bread crust with layers of pepperoni, bacon, ham and ground beef. Mozzarella aplenty.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$32</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$32</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Hawaiian</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Honey-ham, pineapple chunks and melty mozzarella.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$32</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Hawaiian</p>
-                        <p class="poppins-regular-italic text-sm">Honey-ham, pineapple chunks and melty mozzarella.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Vegetarian</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Crisped dough with layers of mushroom, spinach, tomato, onion, layered with mozzarella.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$32</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$32</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Vegetarian</p>
-                        <p class="poppins-regular-italic text-sm">Crisped dough with layers of mushroom, spinach, tomato, onion, layered with mozzarella.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$32</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">BBQ Chicken</p>
-                        <p class="poppins-regular-italic text-sm">BBQ sauce, caramelized onions, mushrooms, and chicken on a bed of mozzarella.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$32</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">BBQ Chicken</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">BBQ sauce, caramelized onions, mushrooms, and chicken on a bed of mozzarella.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$32</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-
         <!-- SPECIALTY BURGERS -->
 
-        <div class="relative mt-12" id="specialty-burgers">
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-4" />
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-4 -scale-x-100" />
-            <h3 class="font-serif text-center text-3xl mt-4 mb-8">Specialty Burgers</h3>
-            <div class="md:grid md:grid-cols-2">
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Island Hopper</p>
-                        <p class="poppins-regular-italic text-sm">A juicy all-beef patty with carmelized onions, mushrooms, jalapenos, chipotle mayo, lettuce, tomato, pickle, and mozzarella cheese on a brioche bun</p>
+        <div class="lg:grid lg:grid-cols-4 lg:mt-12">
+            <div class="relative mt-12 lg:col-span-3" id="specialty-burgers">
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-4 lg:hidden"/>
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-4 -scale-x-100 lg:hidden" />
+                <h3 class="font-serif text-center text-3xl lg:text-5xl mt-4 mb-8">Specialty Burgers</h3>
+                <div class="md:grid md:grid-cols-2">
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Island Hopper</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">A juicy all-beef patty with carmelized onions, mushrooms, jalapenos, chipotle mayo, lettuce, tomato, pickle, and mozzarella cheese on a brioche bun</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Flamethrower</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">All-beef patty with bacon, jalapenos, chipotle mayo, Frank's Red Hot sauce, lettuce, tomato, pickle, cheddar cheese and onion rings on a brioche bun</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Flamethrower</p>
-                        <p class="poppins-regular-italic text-sm">All-beef patty with bacon, jalapenos, chipotle mayo, Frank's Red Hot sauce, lettuce, tomato, pickle, cheddar cheese and onion rings on a brioche bun</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Maple Bacon</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">All-beef patty with maple bacon onion jam, cheddar cheese, chipotle mayo, lettuce, bacon, pickles and tomato on a brioche bun</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Hawaiian</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">All-beef patty with Teriyaki, ham, pineapple, lettuce, tomato, and mozzarella cheese on a brioche bun</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Maple Bacon</p>
-                        <p class="poppins-regular-italic text-sm">All-beef patty with maple bacon onion jam, cheddar cheese, chipotle mayo, lettuce, bacon, pickles and tomato on a brioche bun</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Hawaiian</p>
-                        <p class="poppins-regular-italic text-sm">All-beef patty with Teriyaki, ham, pineapple, lettuce, tomato, and mozzarella cheese on a brioche bun</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">The Luke Burger</p>
-                        <p class="poppins-regular-italic text-sm">Two strips of crispy chicken tossed in hot sauce with bacon, cheddar, two onion rings, lettuce, tomato, and pickles</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">The Luke Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Two strips of crispy chicken tossed in hot sauce with bacon, cheddar, two onion rings, lettuce, tomato, and pickles</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="relative lg:col-span-1">
+                <img src="img/hummingbird_and_flower2.png" class="hidden absolute top-40 right-20 lg:inline h-[300px] object-cover -scale-x-100" />
+            </div>
         </div>
-
+            
         <!-- HAND HELDS -->
-
-        <div class="relative mt-12 mb-8" id="hand-helds">
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8" />
-            <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 -scale-x-100" />
-            <h3 class="font-serif text-center text-3xl mt-4 mb-8">Hand Helds</h3>
-            <p class="text-center poppins-regular-italic text-sm mb-8 w-5/6 mx-auto">Served with a side of hand cut fries or house salad. Dressings: House, Ranch, Blue Cheese, Oil & Vinegar. Substitutes: Caesar Salads $3, Yam Fries $3, Poutine $4, Gluten-free Bun $2, Lettuce Bun $0.</p>
-            <div class="md:grid md:grid-cols-2">
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Beef Dip</p>
-                        <p class="poppins-regular-italic text-sm">Thin-sliced roast beef on a brioche bun with side au jus and horse radish mayo.</p>
+        <div class="lg:grid lg:grid-cols-4 lg:mt-12">
+            <div class="relative lg:col-span-1">
+                <img src="img/hummingbird_and_flower3.png" class="hidden absolute top-40 left-4 lg:inline h-[500px] object-cover" />
+            </div>
+            <div class="relative mt-12 mb-8 lg:col-span-3" id="hand-helds">
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 left-8 lg:hidden" />
+                <img src="img/hummingbird_1.png" class="absolute h-[75px] -top-4 right-8 -scale-x-100 lg:hidden" />
+                <h3 class="font-serif text-center text-3xl lg:text-5xl mb-8">Hand Helds</h3>
+                <p class="text-center poppins-regular-italic text-sm lg:text-base mb-8 w-5/6 mx-auto">Served with a side of hand cut fries or house salad. Dressings: House, Ranch, Blue Cheese, Oil & Vinegar. Substitutes: Caesar Salads $3, Yam Fries $3, Poutine $4, Gluten-free Bun $2, Lettuce Bun $0.</p>
+                <div class="md:grid md:grid-cols-2">
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Beef Dip</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Thin-sliced roast beef on a brioche bun with side au jus and horse radish mayo.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Hummingbird BLT</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Bacon, lettuce, tomato with onion, cheese, & guacamole.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Hummingbird BLT</p>
-                        <p class="poppins-regular-italic text-sm">Bacon, lettuce, tomato with onion, cheese, & guacamole.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Chicken Club</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Oven roasted chicken breast, crispy bacon lettuce, tomato, cheddar cheese, mayo & garlic toasted ciabatta.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Pulled Pork Sandwich</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Slow cooked pulled pork, lettuce, creamy cole slaw, chipotle mayo, garlic toasted brioche bun.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$23</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Chicken Club</p>
-                        <p class="poppins-regular-italic text-sm">Oven roasted chicken breast, crispy bacon lettuce, tomato, cheddar cheese, mayo & garlic toasted ciabatta.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Falafel Wrap</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Whole wheat tortilla, falafel, guacamole, beets, tzatziki, lettuce, tomato & red onion.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$21</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Starvin' Marvin</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Roast beef, caramelized onions, and mushrooms, topped with house-made gravy on Texas bread.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Pulled Pork Sandwich</p>
-                        <p class="poppins-regular-italic text-sm">Slow cooked pulled pork, lettuce, creamy cole slaw, chipotle mayo, garlic toasted brioche bun.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Classic Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">A juicy all-beef burger classic with lettuce, tomato, onion & pickles.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$19</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$23</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Galiano Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Our Famous all-beef patty with cheese, bacon, sautéed mushrooms & onions.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Falafel Wrap</p>
-                        <p class="poppins-regular-italic text-sm">Whole wheat tortilla, falafel, guacamole, beets, tzatziki, lettuce, tomato & red onion.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Veggie Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Mushroom patty grilled to perfection. Topped with spinach, mushroom & onions.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$21</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Crispy Chicken Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Breaded chicken breast strips with cheese, bacon, lettuce & tomato.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Starvin' Marvin</p>
-                        <p class="poppins-regular-italic text-sm">Roast beef, caramelized onions, and mushrooms, topped with house-made gravy on Texas bread.</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Cajun Cod Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">Pan-seared 4oz halibut filet with unbeatable seasoning, lettuce & tartar spread.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$30</p>
+                        </div>
                     </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Classic Burger</p>
-                        <p class="poppins-regular-italic text-sm">A juicy all-beef burger classic with lettuce, tomato, onion & pickles.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$19</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Galiano Burger</p>
-                        <p class="poppins-regular-italic text-sm">Our Famous all-beef patty with cheese, bacon, sautéed mushrooms & onions.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Veggie Burger</p>
-                        <p class="poppins-regular-italic text-sm">Mushroom patty grilled to perfection. Topped with spinach, mushroom & onions.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Crispy Chicken Burger</p>
-                        <p class="poppins-regular-italic text-sm">Breaded chicken breast strips with cheese, bacon, lettuce & tomato.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Cajun Cod Burger</p>
-                        <p class="poppins-regular-italic text-sm">Pan-seared 4oz halibut filet with unbeatable seasoning, lettuce & tartar spread.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$30</p>
-                    </div>
-                </div>
-                <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
-                    <div class="col-span-3">
-                        <p class="poppins-extrabold">Mozza Mushroom Burger</p>
-                        <p class="poppins-regular-italic text-sm">All-beef patty with fresh sauteed mushrooms, served on a ciabatta bun.</p>
-                    </div>
-                    <div class="col-span-1">
-                        <p class="text-right poppins-regular">$22</p>
+                    <div class="mt-6 grid grid-cols-4 gap-4 w-5/6 mx-auto">
+                        <div class="col-span-3">
+                            <p class="poppins-extrabold lg:text-lg">Mozza Mushroom Burger</p>
+                            <p class="poppins-regular-italic text-sm lg:text-base">All-beef patty with fresh sauteed mushrooms, served on a ciabatta bun.</p>
+                        </div>
+                        <div class="col-span-1">
+                            <p class="text-right poppins-regular lg:text-base">$22</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -473,10 +494,10 @@
     <footer class="bg-[var(--hummingbird-purple)]">
         <div class="flex justify-between items-start w-full p-4">
             <div class="">
-                <p class="text-white poppins-regular text-sm leading-relaxed">THE HUMMINGBIRD PUB</p>
-                <p class="text-white poppins-regular text-sm leading-relaxed">47 Sturdies Bay Rd</p>
-                <p class="text-white poppins-regular text-sm leading-relaxed">Galiano Island, BC, V0N 1P0</p>
-                <p class="text-white poppins-regular text-sm leading-relaxed">Phone: 250-539-5472</p>
+                <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">THE HUMMINGBIRD PUB</p>
+                <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">47 Sturdies Bay Rd</p>
+                <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">Galiano Island, BC, V0N 1P0</p>
+                <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">Phone: 250-539-5472</p>
             </div>
             <div class="flex flex-col gap-4">
                 <a href="https://www.facebook.com/HummingbirdPub/" ><i class="fa-brands fa-square-facebook text-white text-4xl"></i></a>
