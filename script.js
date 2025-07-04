@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
         const rect3 = image3.getBoundingClientRect()
         if(rect3.top < window.innerHeight && rect3.bottom > 0) {
             const visibleY = window.innerHeight - rect3.top;
-            image3.style.transform = `translateY(${-265 + visibleY * 0.3}px)`
+            image3.style.transform = `translateY(${-275 + visibleY * 0.3}px)`
         }
     }
 })
