@@ -245,9 +245,6 @@
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -262,9 +259,6 @@
   }
   .left-15 {
     left: calc(var(--spacing) * 15);
-  }
-  .left-30 {
-    left: calc(var(--spacing) * 30);
   }
   .z-0 {
     z-index: 0;
@@ -401,9 +395,6 @@
   .h-\[325px\] {
     height: 325px;
   }
-  .h-\[400px\] {
-    height: 400px;
-  }
   .h-\[500px\] {
     height: 500px;
   }
@@ -454,6 +445,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -516,11 +510,14 @@
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
+  .bg-\[url\(\'img\/Pub_winter_2\.jpg\'\)\] {
+    background-image: url('img/Pub_winter_2.jpg');
+  }
   .bg-\[url\(\'img\/exterior_front_entrance\.jpg\'\)\] {
     background-image: url('img/exterior_front_entrance.jpg');
   }
-  .bg-\[url\(\'img\/exterior_side_view\.jpg\'\)\] {
-    background-image: url('img/exterior_side_view.jpg');
+  .bg-\[url\(\'img\/pub_sign\.jpeg\'\)\] {
+    background-image: url('img/pub_sign.jpeg');
   }
   .bg-cover {
     background-size: cover;
@@ -551,6 +548,9 @@
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
@@ -996,11 +996,6 @@
       display: grid;
     }
   }
-  .xl\:h-\[400px\] {
-    @media (width >= 80rem) {
-      height: 400px;
-    }
-  }
   .xl\:h-full {
     @media (width >= 80rem) {
       height: 100%;
@@ -1087,9 +1082,9 @@
       top: calc(var(--spacing) * 40);
     }
   }
-  .\32 xl\:right-20 {
+  .\32 xl\:right-10 {
     @media (width >= 96rem) {
-      right: calc(var(--spacing) * 20);
+      right: calc(var(--spacing) * 10);
     }
   }
   .\32 xl\:left-30 {
@@ -1097,14 +1092,14 @@
       left: calc(var(--spacing) * 30);
     }
   }
+  .\32 xl\:h-\[350px\] {
+    @media (width >= 96rem) {
+      height: 350px;
+    }
+  }
   .\32 xl\:h-\[400px\] {
     @media (width >= 96rem) {
       height: 400px;
-    }
-  }
-  .\32 xl\:h-\[500px\] {
-    @media (width >= 96rem) {
-      height: 500px;
     }
   }
   .\32 xl\:w-2\/3 {
