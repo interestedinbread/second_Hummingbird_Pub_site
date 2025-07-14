@@ -516,8 +516,8 @@
   .bg-\[url\(\'img\/exterior_front_entrance\.jpg\'\)\] {
     background-image: url('img/exterior_front_entrance.jpg');
   }
-  .bg-\[url\(\'img\/pub_sign\.jpeg\'\)\] {
-    background-image: url('img/pub_sign.jpeg');
+  .bg-\[url\(\'img\/exterior_side_view\.jpg\'\)\] {
+    background-image: url('img/exterior_side_view.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -1212,6 +1212,23 @@ html {
 }
 .custom-height-112vh {
   height: 112vh;
+}
+.parallax-img {
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
+  background-size: cover;
+  background-position: center;
+  transition-property: opacity;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 2000ms;
+  transition-duration: 2000ms;
+  opacity: 0;
+  z-index: 0;
+}
+.parallax-img.active {
+  opacity: 1;
+  z-index: 0;
 }
 @property --tw-translate-x {
   syntax: "*";

@@ -1,13 +1,34 @@
-// parallax scroll logic for pub img
+// cycle hero section images
+const images = document.querySelectorAll('.parallax-img')
+let currentIndex = 0
+
+function cycleImages() {
+    images.forEach((img, index) => {
+        img.classList.remove('active')
+    })
+    images[currentIndex].classList.add('active')
+    currentIndex = (currentIndex + 1) % images.length
+}
+
+images[0].classList.add('active')
+
+setInterval(cycleImages, 8000);
+
+// parallax scroll logic
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY
     const image1 = document.getElementById('parallax-img-pub')
     const image2 = document.getElementById('parallax-img-bus')
     const image3 = document.getElementById('parallax-img-pub-front')
+    const image4 = document.getElementById('parallax-img-pub-winter')
     
     // Only run parallax logic if the images exist
     if (image1) {
         image1.style.transform = `translateY(${scrollY * 0.3}px)`
+    }
+
+    if (image4) {
+        image4.style.transform = `translateY(${scrollY * 0.3}px)`
     }
 
     if (image2 && image2.getBoundingClientRect) {
