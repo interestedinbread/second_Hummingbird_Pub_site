@@ -452,9 +452,6 @@
   .scroll-mt-16 {
     scroll-margin-top: calc(var(--spacing) * 16);
   }
-  .scroll-mt-32 {
-    scroll-margin-top: calc(var(--spacing) * 32);
-  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1116,6 +1113,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+html, body {
+  overscroll-behavior: none;
 }
 :root {
   --hummingbird-purple: #980156;

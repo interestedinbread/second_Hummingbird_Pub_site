@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+  overscroll-behavior: none;
+}
+
 :root {
     --hummingbird-purple: #980156;
     --light-blue-bg: rgb(200, 245, 250);
