@@ -1,3 +1,27 @@
+const populateContent = async (sheetName) => {
+    try {
+        const response = await fetch(`https://script.google.com/macros/s/AKfycbxoa9ThcZK-MlI1nidrrY3Uo1mOG3yfl_UKryfmooZsERKsYIpLfy0ceamQvz4yk9x-Ow/exec?sheet=${sheetName}`)
+        const data = await response.json()
+
+        document.querySelectorAll('[data-name]').forEach(el => {
+            const key = el.getAttribute('data-name');
+            if(data.hours[key]){
+                console.log('match found')
+                el.textContent = data.hours[key]
+            } else if(data.prices[key]){
+                console.log('match found')
+                el.textContent = `$${data.prices[key]}`
+            }
+        })
+        console.log(`${sheetName} content loaded`)
+    } catch (err) {
+        console.error("Failed to load sheet data", err)
+    }
+}
+
+populateContent('Hours')
+populateContent('Prices')
+
 // cycle hero section images
 const images = document.querySelectorAll('.parallax-img')
 let currentIndex = 0
@@ -149,3 +173,4 @@ if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
         })
     })
 }
+
