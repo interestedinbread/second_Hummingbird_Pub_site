@@ -22,25 +22,28 @@ const populateContent = async (sheetName) => {
             if(isFresh){
                 renderContent(parsed.data)
                 return
+            } else {
+                console.log('Cache expired. Refetching...');
             }
         } catch (err) {
             console.warn('Corrupted localStorage data. Refetching...');
             localStorage.removeItem('menuData');
         }
         
-    } else {
-        try {
-            const response = await fetch(`https://script.google.com/macros/s/AKfycbxoa9ThcZK-MlI1nidrrY3Uo1mOG3yfl_UKryfmooZsERKsYIpLfy0ceamQvz4yk9x-Ow/exec?sheet=${sheetName}`)
-            const data = await response.json()
-            renderContent(data)
-            localStorage.setItem('menuData', JSON.stringify({
-                data,
-                timestamp: Date.now()
-            }))
-        } catch (err) {
-            console.error("Failed to load sheet data", err)
-        }
+    } 
+    
+    try {
+        const response = await fetch(`https://script.google.com/macros/s/AKfycbxoa9ThcZK-MlI1nidrrY3Uo1mOG3yfl_UKryfmooZsERKsYIpLfy0ceamQvz4yk9x-Ow/exec?sheet=${sheetName}`)
+        const data = await response.json()
+        renderContent(data)
+        localStorage.setItem('menuData', JSON.stringify({
+            data,
+            timestamp: Date.now()
+        }))
+    } catch (err) {
+        console.error("Failed to load sheet data", err)
     }
+    
 }
 
 populateContent('Hours')
