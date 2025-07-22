@@ -43,7 +43,7 @@
             <h2 class="merienda-regular mb-4 lg:my-8 text-center text-4xl text-[var(--hummingbird-purple)] lg:text-6xl ">About Us</h2>
             <div class="relative mx-auto lg:w-4/5 xl:grid xl:grid-cols-3 xl:grid-rows-2 xl:gap-8 xl:max-h-[65vh] 2xl:w-2/3">
                 <div class="bg-[var(--hummingbird-purple)] w-4/5 mx-auto rounded-md overflow-hidden xl:w-full xl:col-span-2">
-                    <p class="text-white poppins-regular p-4 text-sm leading-relaxed md:text-base lg:text-lg">Located in the heart of South Galiano, the Hummingbird Pub is a beloved place to enjoy breakfast, lunch, dinner, or drinks all year round! The quintessential pub atmosphere and signature island charm are unmistakable the moment you arrive. We've got an outstanding menu, loads of comfortable seating, and we frequently host events, activities and live music. Come join us!</p>
+                    <p class="text-white poppins-regular p-4 text-sm leading-relaxed md:text-base lg:text-lg">Located in the heart of South Galiano, the Hummingbird Pub is a beloved place to enjoy lunch, dinner, or drinks all year round! The quintessential pub atmosphere and signature island charm are unmistakable the moment you arrive. We've got an outstanding menu, loads of comfortable seating, and we frequently host events, activities and live music. Come join us!</p>
                     <div class="flex justify-center -mt-10 -mb-8 overflow-hidden">
                         <img src="img/fleuron_left.png" class="w-30 lg:w-40"/>
                         <img src="img/fleuron_left.png" class="w-30 lg:w-40 -scale-x-100"/>
@@ -151,10 +151,10 @@
         <section class="relative bg-[var(--light-blue-bg)] w-full">
             <h2 class="merienda-regular text-center text-4xl text-[var(--hummingbird-purple)] lg:text-6xl pt-8 pb-4">Find these and more on our menu!</h2>
             <div class="lg:grid lg:grid-cols-4 pt-4 lg:gap-4 overflow-hidden">
-                <img src="img/Edited_Hummingbird_food_pics/breakfast_hash.jpg" class="pt-4 lg:pt-0 lg:h-[103%]" />
-                <img src="img/Edited_Hummingbird_food_pics/eggs_benedict.jpg" class="lg:h-[103%] lg:object-cover"/>
+                <img src="img/BLT.jpg" class="lg:h-[103%] lg:object-cover"/>
                 <img src="img/Edited_Hummingbird_food_pics/shrimp salad.jpg" class="lg:h-[103%] lg:object-cover"/>
                 <img src="img/Edited_Hummingbird_food_pics/Nachos.jpg" class=""/>
+                <img src="img/Salad_2.jpg" class="pt-4 lg:pt-0 lg:h-[103%]" />
             </div>
             <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-hidden lg:my-4">
                 <img src="img/Edited_Hummingbird_food_pics/chicken_tenders.jpg" class=""/>
@@ -164,18 +164,26 @@
 
         </section>
     </main>
-    <footer class="bg-[var(--hummingbird-purple)]">
-        <div class="flex justify-between items-start w-full p-4">
-            <div class="">
+    <footer class="bg-[var(--hummingbird-purple)] pb-4">
+        <div class="flex justify-between w-full p-4">
+            <div>
                 <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">THE HUMMINGBIRD PUB</p>
                 <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">47 Sturdies Bay Rd</p>
                 <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">Galiano Island, BC, V0N 1P0</p>
                 <p class="text-[var(--green-text)] poppins-regular text-sm leading-relaxed">Phone: 250-539-5472</p>
             </div>
+            <div className="flex items-center justify-center hidden sm:block">
+                <p class="text-sm text-white mt-6 -ml-24 hidden sm:block">Web Design - Eric Morrison</p>
+                <p class="text-sm text-white -ml-24 hidden sm:block">contact: eric_m250@outlook.com</p>
+            </div>
             <div class="flex flex-col gap-4">
                 <a href="https://www.facebook.com/HummingbirdPub/" ><i class="fa-brands fa-square-facebook text-white text-4xl"></i></a>
                 <a href="https://www.instagram.com/hummingbirdpub/" ><i class="fa-brands fa-square-instagram text-white text-4xl"></i></a>
             </div>
+        </div>
+        <div className="flex items-center justify-center sm:hidden">
+                <p class="text-sm text-white ml-4 sm:hidden">Web Design - Eric Morrison</p>
+                <p class="text-sm text-white ml-4 sm:hidden">contact: eric_m250@outlook.com</p>
         </div>
     </footer>
     <script src="script.js"></script>
