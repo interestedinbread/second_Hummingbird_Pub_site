@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.10",
-    "tailwindcss": "^4.1.10"
+    "@tailwindcss/cli": "^4.1.10"
   },
   "devDependencies": {
+    "tailwindcss": "^4.1.11",
     "vite": "^6.3.5"
   },
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "build:css": "npx tailwindcss -i ./styles.css -o ./output.css --watch",
-  "preview": "vite preview"
-}
+    "dev": "vite",
+    "build": "vite build",
+    "build:css": "npx tailwindcss -i ./styles.css -o ./output.css --watch",
+    "preview": "vite preview"
+  }
 }

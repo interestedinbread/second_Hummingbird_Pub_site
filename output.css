@@ -200,9 +200,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .-top-1 {
-    top: calc(var(--spacing) * -1);
-  }
   .-top-4 {
     top: calc(var(--spacing) * -4);
   }
@@ -570,9 +567,6 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
-  .pb-\[300px\] {
-    padding-bottom: 300px;
-  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
@@ -805,11 +799,6 @@
       display: inline;
     }
   }
-  .lg\:h-\[50px\] {
-    @media (width >= 64rem) {
-      height: 50px;
-    }
-  }
   .lg\:h-\[90vh\] {
     @media (width >= 64rem) {
       height: 90vh;
@@ -843,16 +832,6 @@
   .lg\:h-\[300px\] {
     @media (width >= 64rem) {
       height: 300px;
-    }
-  }
-  .lg\:h-\[325px\] {
-    @media (width >= 64rem) {
-      height: 325px;
-    }
-  }
-  .lg\:h-\[350px\] {
-    @media (width >= 64rem) {
-      height: 350px;
     }
   }
   .lg\:max-h-\[400px\] {
@@ -1034,16 +1013,6 @@
   .xl\:grid {
     @media (width >= 80rem) {
       display: grid;
-    }
-  }
-  .xl\:h-\[300px\] {
-    @media (width >= 80rem) {
-      height: 300px;
-    }
-  }
-  .xl\:h-\[350px\] {
-    @media (width >= 80rem) {
-      height: 350px;
     }
   }
   .xl\:h-full {
