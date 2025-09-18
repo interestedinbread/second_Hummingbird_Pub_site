@@ -149,3 +149,12 @@ html, body {
   opacity: 1;
   z-index: 0;
 }
+
+/* Parallax background images */
+.parallax-bg-1 {
+    background-image: url('img/exterior_side_view_small.jpg');
+}
+
+.parallax-bg-2 {
+    background-image: url('img/Pub_winter_2_small.jpg');
+}

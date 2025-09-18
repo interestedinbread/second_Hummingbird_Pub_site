@@ -543,14 +543,8 @@
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
-  .bg-\[url\(\'img\/Pub_winter_2_small\.jpg\'\)\] {
-    background-image: url('img/Pub_winter_2_small.jpg');
-  }
   .bg-\[url\(\'img\/exterior_front_entrance_small\.jpg\'\)\] {
     background-image: url('img/exterior_front_entrance_small.jpg');
-  }
-  .bg-\[url\(\'img\/exterior_side_view_small\.jpg\'\)\] {
-    background-image: url('img/exterior_side_view_small.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -1303,6 +1297,12 @@ html, body {
 .parallax-img.active {
   opacity: 1;
   z-index: 0;
+}
+.parallax-bg-1 {
+  background-image: url('img/exterior_side_view_small.jpg');
+}
+.parallax-bg-2 {
+  background-image: url('img/Pub_winter_2_small.jpg');
 }
 @property --tw-translate-x {
   syntax: "*";
