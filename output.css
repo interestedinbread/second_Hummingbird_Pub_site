@@ -543,9 +543,6 @@
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
-  .bg-\[url\(\'img\/exterior_front_entrance_small\.jpg\'\)\] {
-    background-image: url('img/exterior_front_entrance_small.jpg');
-  }
   .bg-cover {
     background-size: cover;
   }
